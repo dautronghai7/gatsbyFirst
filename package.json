@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
@@ -16,7 +16,15 @@
   },
   "dependencies": {
     "gatsby": "^3.10.2",
+    "gatsby-plugin-sass": "^4.10.0",
+    "gatsby-source-contentful": "^5.10.0",
+    "gatsby-source-filesystem": "^3.10.0",
+    "gatsby-transformer-remark": "^4.7.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "sass": "^1.37.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }
