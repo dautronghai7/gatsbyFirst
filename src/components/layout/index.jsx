@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../header';
 import Footer from '../footer';
-import { graphql, StaticQuery } from "gatsby"
 import * as stylesLayouts from './layout.module.scss';
 const layoutComponent = ({children}) => {
     return (
